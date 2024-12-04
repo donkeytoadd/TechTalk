@@ -1,8 +1,8 @@
-namespace XLN_TechTalk.UpdatedP4CS
+namespace TechTalk.UpdatedP4CS
 {
     using System.Collections.Generic;
-    using p4cs;
-    using XLN_TechTalk.UpdatedP4CS.Apps;
+    using TechTalk.UpdatedP4CS.Apps;
+    using TechTalk.UpdatedP4CS.Interfaces;
 
     class Program
     {

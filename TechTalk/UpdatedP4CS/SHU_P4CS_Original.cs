@@ -1,4 +1,4 @@
-﻿namespace XLN_TechTalk.UpdatedP4CS
+﻿namespace TechTalk.UpdatedP4CS
 {
     using System;
 

@@ -1,4 +1,4 @@
-namespace p4cs
+namespace TechTalk.UpdatedP4CS.Interfaces
 {
     public interface IApp
     {

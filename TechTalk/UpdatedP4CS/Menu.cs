@@ -1,15 +1,16 @@
-using System;
-using System.Collections.Generic;
-
-namespace p4cs
+namespace TechTalk.UpdatedP4CS
 {
+    using System;
+    using System.Collections.Generic;
+    using TechTalk.UpdatedP4CS.Interfaces;
+
     public class Menu
     {
-        private readonly Dictionary<int, IApp> _apps;
+        private readonly Dictionary<int, IApp> apps;
 
         public Menu(Dictionary<int, IApp> apps)
         {
-            _apps = apps;
+            this.apps = apps;
         }
 
         public void Display()
@@ -29,7 +30,7 @@ namespace p4cs
 
                 bool validInput = int.TryParse(Console.ReadLine(), out int choice);
 
-                if (!validInput || (choice != 9 && !_apps.ContainsKey(choice)))
+                if (!validInput || (choice != 9 && !this.apps.ContainsKey(choice)))
                 {
                     Console.WriteLine("Invalid option, please try again.");
                     continue;
@@ -43,7 +44,7 @@ namespace p4cs
                 
                 else
                 {
-                    _apps[choice].Run();
+                    this.apps[choice].Run();
                 }
             }
         }

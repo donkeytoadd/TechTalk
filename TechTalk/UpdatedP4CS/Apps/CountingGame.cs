@@ -1,7 +1,7 @@
-namespace XLN_TechTalk.UpdatedP4CS.Apps
+namespace TechTalk.UpdatedP4CS.Apps
 {
     using System;
-    using p4cs;
+    using TechTalk.UpdatedP4CS.Interfaces;
 
     public class CountingGame : IApp
     {

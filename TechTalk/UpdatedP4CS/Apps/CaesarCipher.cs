@@ -1,8 +1,8 @@
-namespace XLN_TechTalk.UpdatedP4CS.Apps
+namespace TechTalk.UpdatedP4CS.Apps
 {
     using System;
     using System.Linq;
-    using p4cs;
+    using TechTalk.UpdatedP4CS.Interfaces;
 
     public class CaesarCipher : IApp
     {
@@ -33,8 +33,12 @@ namespace XLN_TechTalk.UpdatedP4CS.Apps
             char ShiftChar(char c)
             {
                 int index = alphabet.IndexOf(c);
-                if (index < 0) return c; // Non-alphabetic character
+                
+                if (index < 0) 
+                    return c; // Non-alphabetic character
+                
                 int shiftedIndex = (index + shift + 26) % 26;
+                
                 return alphabet[shiftedIndex];
             }
 
