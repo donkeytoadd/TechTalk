@@ -1,0 +1,205 @@
+<!doctype html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+
+		<title>Placement Overview so far</title>
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<link rel="stylesheet" href="../dist/reset.css">
+		<link rel="stylesheet" href="../dist/reveal.css">
+		<link rel="stylesheet" href="../dist/theme/blood.css" id="theme">
+    	<link rel="stylesheet" href="../plugin/highlight/monokai.css">
+		<link rel="stylesheet" href="../css/custom-styles.scss">
+	</head>
+
+	<body>
+
+		<div class="reveal">
+			<div class="slides">
+				<section>
+					<h1><span class="underline">My first 6 months on placement</span></h1>
+					<br>
+					<h4>Challenges, Growth, and Lessons Learned</h4>
+					<p>
+						- Jordan Hanson
+					</p>
+				</section>
+
+				<section>
+					<h2>What I'll Cover</h2>
+					<ul>
+						<li class="fragment fade-left">Expectations vs Reality</li>
+						<li class="fragment fade-left">Areas I worked on</li>
+						<li class="fragment fade-left">Challenges I faced</li>
+						<li class="fragment fade-left">Lessons Learned</li>
+					</ul>
+				</section>
+
+				<section>
+					<h1>Expectations vs Reality</h1>
+					<!-- <p>Expectations</p>
+					<ul>
+						<li class="fragment fade-left">Expectations vs Reality</li>
+						<li class="fragment fade-left">Areas I worked on</li>
+						<li class="fragment fade-left">Challenges I faced</li>
+						<li class="fragment fade-left">Lessons Learned</li>
+					</ul>
+					<p>Reality</p>
+					<ul>
+						<li class="fragment fade-left">Expectations vs Reality</li>
+						<li class="fragment fade-left">Areas I worked on</li>
+						<li class="fragment fade-left">Challenges I faced</li>
+						<li class="fragment fade-left">Lessons Learned</li>
+					</ul> -->
+
+					<table>
+						<tr>
+							<th>Expectations</th>
+							<th>Reality</th>
+						</tr>
+						<tr>
+							<td>
+								<ul>
+									<li>apples</li>
+									<li>oranges</li>
+								</ul>
+							</td>
+							<td>
+								<ul>
+									<li>apples</li>
+									<li>oranges</li>
+								</ul>
+							</td>
+						</tr>
+					</table>
+					
+					
+
+				</section>
+
+				<section>
+					<section>
+						<h2>Key Projects</h2>
+					<p>Here are a few areas I enjoyed working on the most so far</p>
+					<ul>
+					  <li class="fragment">Feature Development: Improved search functionality</li>
+					  <li class="fragment">Bug Fixing: Resolved critical app crashes</li>
+					  <li class="fragment">Code Refactoring: Enhanced maintainability of legacy code</li>
+					</ul>
+					</section>
+
+					<section>
+						<h1>Feature Development: Improved search functionality</h1>
+					</section>
+
+					<section>
+						<h1>Bug Fixing: Resolved critical app crashes</h1>
+					</section>
+
+					<section>
+						<h1>Code Refactoring: Enhanced maintainability of legacy code</h1>
+					</section>
+				  </section>
+
+				<section>
+					<h1>How my code used to be  </h1>
+				</section>
+
+				<section data-background-color="white"><h2>Scrollbar inverts<br>based on slide bg</h2></section>
+
+				<section data-auto-animate data-auto-animate-easing="cubic-bezier(0.770, 0.000, 0.175, 1.000)">
+					<h2>Auto-Animate</h2>
+					<p>Scroll triggered auto-animations 😍</p>
+					<div class="r-hstack justify-center">
+						<div data-id="box1" style="background: #999; width: 50px; height: 50px; margin: 10px; border-radius: 5px;"></div>
+						<div data-id="box2" style="background: #999; width: 50px; height: 50px; margin: 10px; border-radius: 5px;"></div>
+						<div data-id="box3" style="background: #999; width: 50px; height: 50px; margin: 10px; border-radius: 5px;"></div>
+					</div>
+				</section>
+
+				<section data-auto-animate data-auto-animate-easing="cubic-bezier(0.770, 0.000, 0.175, 1.000)">
+					<div class="r-hstack justify-center">
+						<div data-id="box1" data-auto-animate-delay="0" style="background: cyan; width: 150px; height: 100px; margin: 10px;"></div>
+						<div data-id="box2" data-auto-animate-delay="0.1" style="background: magenta; width: 150px; height: 100px; margin: 10px;"></div>
+						<div data-id="box3" data-auto-animate-delay="0.2" style="background: yellow; width: 150px; height: 100px; margin: 10px;"></div>
+					</div>
+					<h2 style="margin-top: 20px;">Auto-Animate</h2>
+				</section>
+
+				<section data-auto-animate data-auto-animate-easing="cubic-bezier(0.770, 0.000, 0.175, 1.000)">
+					<div class="r-stack">
+						<div data-id="box1" style="background: cyan; width: 300px; height: 300px; border-radius: 200px;"></div>
+						<div data-id="box2" style="background: magenta; width: 200px; height: 200px; border-radius: 200px;"></div>
+						<div data-id="box3" style="background: yellow; width: 100px; height: 100px; border-radius: 200px;"></div>
+					</div>
+					<h2 style="margin-top: 20px;">Auto-Animate</h2>
+				</section>
+
+				<section data-background-gradient="linear-gradient(to bottom, #283b95, #17b2c3)" id="gradient-bg">
+					<h2 data-id="code-title">Code highlights,<br />meet scroll triggers</h2>
+					<pre data-id="code-animation"><code class="hljs javascript" data-trim data-line-numbers="|4,8-11|17|22-24"><script type="text/template">
+						import React, { useState } from 'react';
+
+						function Example() {
+						  const [count, setCount] = useState(0);
+
+						  return (
+						    <div>
+						      <p>You clicked {count} times</p>
+						      <button onClick={() => setCount(count + 1)}>
+						        Click me
+						      </button>
+						    </div>
+						  );
+						}
+
+						function SecondExample() {
+						  const [count, setCount] = useState(0);
+
+						  return (
+						    <div>
+						      <p>You clicked {count} times</p>
+						      <button onClick={() => setCount(count + 1)}>
+						        Click me
+						      </button>
+						    </div>
+						  );
+						}
+					</script></code></pre>
+				</section>
+
+				<section class="stack">
+
+          <section data-background="https://static.slid.es/reveal/image-placeholder.png" id="image-bg">
+            <h2>Image Backgrounds</h2>
+          </section>
+
+          <section data-background-video-muted data-background-video="https://s3.amazonaws.com/static.slid.es/site/homepage/v1/homepage-video-editor.mp4,https://s3.amazonaws.com/static.slid.es/site/homepage/v1/homepage-video-editor.webm">
+            <div style="background-color: rgba(0, 0, 0, 0.9); color: #fff; padding: 20px;">
+              <h2>Video background</h2>
+            </div>
+          </section>
+
+        </section>
+				<section><h2>The end</h2></section>
+
+			</div>
+
+		</div>
+
+		<script src="../dist/reveal.js"></script>
+		<script src="../plugin/highlight/highlight.js"></script> 
+		<script>
+			Reveal.initialize({
+				// view: 'scroll',
+				// hash: true,
+
+				plugins: [ RevealHighlight ]
+			});
+		</script>
+
+	</body>
+</html>
